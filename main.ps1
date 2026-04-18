@@ -54,7 +54,7 @@ try {
     
     # Restart the VM
     Write-Output "Initiating VM restart..."
-    Restart-AzVM -ResourceGroupName $ResourceGroupName -Name $VirtualMachineName -Force -ErrorAction Stop
+    Restart-AzVM -ResourceGroupName $ResourceGroupName -Name $VirtualMachineName -ErrorAction Stop
     
     Write-Output "VM restart initiated successfully"
     Write-Output "VM: $VirtualMachineName in Resource Group: $ResourceGroupName has been restarted"
